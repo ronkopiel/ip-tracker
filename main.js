@@ -67,5 +67,4 @@ const fillIPInfo = (ip) => {
   timezone.textContent = "UTC " + ip.data.location.timezone;
   isp.textContent = ip.data.isp;
 };
-// window.initMap = initMap;
-initMap();
+window.initMap = initMap;
