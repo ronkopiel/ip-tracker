@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-container">
+        <div class="title">IP Address Tracker</div>
+        <form  class="searchline" id="search-form">
+          <input
+            type="search"
+            placeholder="Search for any IP address or domain"
+            id="search"
+            autocomplete="off"
+          />
+          <button type="submit" id="submit-button">
+            <img
+              src="/images/icon-arrow.svg"
+              alt="submit button"
+              class="arrow-icon"
+            />
+          </button>
+        </form>
+        <div class="info-div">
+          <div class="inside-div">
+            <div class="div-header">IP ADDRESS</div>
+            <div id="ip" class="div-content"></div>
+          </div>
+          <div class="spacer"></div>
+          <div class="inside-div">
+            <div class="div-header">LOCATION</div>
+            <div id="location" class="div-content"></div>
+          </div>
+          <div class="spacer"></div>
+          <div class="inside-div">
+            <div class="div-header">TIMEZONE</div>
+            <div id="timezone" class="div-content"></div>
+          </div>
+          <div class="spacer"></div>
+          <div class="inside-div">
+            <div class="div-header">ISP</div>
+            <div id="isp" class="div-content"></div>
+          </div>
+        </div>
+        <img
+          src="/images/pattern-bg.png"
+          alt="background"
+          class="background-image"
+        />
+      </div>
+      <div class="bottom-container">
+        <div id="map"></div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    defer
+  ></script>
+  <script
+    async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT0gmIuTDA79J5h8onpKhBL0LryMFM6AI&callback=initMap&v=weekly"
+    defer
+  ></script>
+  <script src="/main.js" defer></script>
+  </body>
+</html>
